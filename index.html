@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevShop - E-commerce moderno de smartphones">
+  <meta name="author" content="Brenno Alencar">
+  <link rel="shortcut icon" href="assets/smartphone.webp" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>DevShop | Smartphones</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container_header">
+      <div class="logo_tipo">
+        <a href="#">Dev<span class="sp_logo">Shop</span></a>
+      </div>
+
+      <button class="menu_toggle" id="menuToggle" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <ul class="menu_nav">
+          <li><a href="#" class="menu_item">Home</a></li>
+          <li><a href="#" class="menu_item">Loja</a></li>
+          <li><a href="#" class="menu_item">Compras</a></li>
+          <li><a href="#" class="menu_item">Suporte</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <button class="btn_action" id="carrinho" aria-label="Abrir Carrinho">
+          <div class="item_carrinho" id="item">0</div>
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="cart" id="cart">
+    <div class="cart_header">
+      <h3>Meu Carrinho</h3>
+      <button class="btn_close_cart" id="fecharCarrinho">✕</button>
+    </div>
+    <div class="cart_items" id="cartItems"></div>
+    <div class="cart_footer">
+      <div class="total_container">
+        <strong>Total:</strong>
+        <span id="total">R$ 0,00</span>
+      </div>
+      <button class="btn_finalizar">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Sua Loja em <span class="sp_title">Smartphones</span></h1>
+      <p>Os melhores modelos com preços justos.</p>
+    </section>
+    <section class="produtos" id="produtos"></section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      &copy; Dev<span class="sp_logo">Shop</span> — Desenvolvido por <strong>Brenno Alencar</strong>
+      para seu <a class="link_github" href="https://github.com/BrennoAlenkar" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
